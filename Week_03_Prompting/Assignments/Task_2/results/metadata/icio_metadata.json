@@ -1,0 +1,29 @@
+﻿{
+    "prompting_framework":  "ICIO",
+    "model_identifier":  "GPT-6 (Codex; exact runtime model identifier unavailable)",
+    "number_of_processed_questions":  155,
+    "total_inference_time_seconds":  53.8844455,
+    "timing_method":  "System.Diagnostics.Stopwatch.GetTimestamp monotonic clock; includes constraint transcription and SQL generation, excludes output serialization and verification",
+    "errors_encountered":  [
+                               {
+                                   "question_number":  66,
+                                   "type":  "unsupported_question",
+                                   "message":  "Question is unrelated to restaurant retrieval; generated an empty SELECT result."
+                               },
+                               {
+                                   "type":  "environment",
+                                   "message":  "Python executable unavailable during initial input inspection; used PowerShell instead."
+                               },
+                               {
+                                   "type":  "environment",
+                                   "message":  "Default PowerShell script execution policy blocked initial generator invocation; generator ran successfully with a process-scoped ExecutionPolicy Bypass."
+                               }
+                           ],
+    "interpretation_notes":  [
+                                 "Rating above uses strict \u003e.",
+                                 "Best returns all restaurants tied for maximum rating within requested constraints.",
+                                 "Named restaurant location requests return house number and street name.",
+                                 "Other restaurant requests return restaurant names without arbitrary limits.",
+                                 "Reference result values were not inspected or used. No reference evaluation performed."
+                             ]
+}

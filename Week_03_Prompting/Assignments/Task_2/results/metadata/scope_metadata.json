@@ -1,0 +1,23 @@
+{
+  "framework": "SCOPE",
+  "model_identifier": "GPT-6 (exact deployment identifier unavailable)",
+  "number_of_questions_processed": 155,
+  "total_inference_time_seconds": 68.48392969998531,
+  "errors_encountered": [
+    "Preparation: default python.exe was inaccessible; used python3.14.",
+    "Database parsing: Python literal parser rejected a leading-zero house number; used CSV parsing instead.",
+    "CSV reader default field-size limit exceeded; increased the limit without inspecting reference fields.",
+    "Question-only review corrected drive-in cuisine parsing and removed the word food from five region cuisine filters.",
+    "Question 66 has no restaurant retrieval intent or schema-representable answer; emitted an empty-result SELECT."
+  ],
+  "validation": "All 155 SELECT queries executed successfully against an in-memory SQLite database built from the supplied records. Reference results and evaluator were not used.",
+  "timing": "time.perf_counter, started before prediction generation and stopped after the final validated prediction; excludes deliverable writing and reporting.",
+  "interpretation": {
+    "above": "strictly greater than",
+    "best": "maximum rating within requested city or region and food category, including ties",
+    "named_restaurant_location_columns": [
+      "HOUSE_NUMBER",
+      "STREET_NAME"
+    ]
+  }
+}

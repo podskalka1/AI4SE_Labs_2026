@@ -1,0 +1,11 @@
+﻿{
+    "framework":  "Tree of Thoughts",
+    "model_identifier":  "GPT-6 (Codex; exact backend identifier unavailable)",
+    "number_of_processed_questions":  155,
+    "total_inference_time_seconds":  79.601,
+    "errors_encountered":  [
+                               "Initial Python invocation failed because the executable was inaccessible; generation used PowerShell instead.",
+                               "Direct script execution was disabled by PowerShell execution policy; the script was invoked as a script block.",
+                               "Initial parsing ambiguities were detected and corrected before finalizing predictions."
+                           ]
+}
