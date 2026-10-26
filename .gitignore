@@ -151,6 +151,8 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
 .venv
 env/
@@ -218,3 +220,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local uv dependency caches
+.uv-cache/
+# Requirements refinement generated documents
+/Week_04_Requirements/Task_1/output/*
+!/Week_04_Requirements/Task_1/output/requirements.md
+/Week_04_Requirements/Task_1/outputs/
