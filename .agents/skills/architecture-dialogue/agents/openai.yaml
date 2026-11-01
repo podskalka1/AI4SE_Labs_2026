@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Dialogue and ADR"
+  short_description: "Discuss architectures and iteratively refine an ADR"
+  default_prompt: "Use $architecture-dialogue to read my software requirements, discuss at least three architectural approaches, and later draft and review an ADR while preserving separate notes."
